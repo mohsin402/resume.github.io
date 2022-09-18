@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/img/pic.jpg' %}" height='200px' width='200px' class='img-thumbnail' alt="">
+    </div>
+    <div class="container text-white pt-5 ">
+        <h1>Hello,</h1>
+        <div class="px-5 text-justify" style='line-height:1.5rem;'>
+            <p style='text-indent:100px;'>I am Mohd Mohsin ,Looking for a challenging role so that I can use my skills and capabilities through sincere dedication and hard work for successful career.</p>
+            <p>Passionate Software Engineering student pursuing a Bachelor of Technology in Computer Science and
+                Engineering and seeking a beginner/intern role to enhance and explore my technical knowledge gained at Dr.
+                A.P.J. Abdul Kalam Technical University in the last three years. I have participated in various quiz challenges
+                held at the college campus.</p>
+        </div>
+    </div>
+    <div class="text-center pt-5">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning mx-5">hire me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info ">contact me</a>
+    </div>
+</div>
+
+{% endblock content %}
